@@ -22,6 +22,11 @@
         </v-layout>
       </v-content>
     </v-container>
+    <v-footer class="pa-3">
+      <v-layout justify-center>
+        <div class="justify-center">Lovely host on <v-icon>fa-github</v-icon> Pages || {{ new Date().getFullYear() }}</div>
+      </v-layout>
+    </v-footer>
   </v-app>
 </template>
 
