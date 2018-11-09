@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2> My Timeline </h2>
+    <h2 class="headline"> My Timeline </h2>
     <v-timeline>
       <v-timeline-item
         v-for="(input, i) in inputs"
