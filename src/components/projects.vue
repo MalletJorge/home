@@ -5,7 +5,7 @@
     </div>
     <v-layout column>
       <v-flex>
-        <v-card dark hover="true">
+        <v-card dark hover>
           <v-card-title primary-title class="headline"> Atelier | #3DPrinting</v-card-title>
           <v-card-text>
             <p>
@@ -26,7 +26,7 @@
         </v-card>
       </v-flex>
       <v-flex>
-        <v-card dark hover="true">
+        <v-card dark hover>
           <v-card-title primary-title class="headline">This | #VueJs </v-card-title>
           <v-card-text>
             <p>
@@ -40,7 +40,7 @@
         </v-card>
       </v-flex>
       <v-flex>
-        <v-card dark hover="true">
+        <v-card dark hover>
           <v-card-title primary-title class="headline">Akademy 2018 Schedule </v-card-title>
           <v-card-text>
             <p>

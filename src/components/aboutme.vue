@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout>
-      <v-card dark hover="true">
+      <v-card dark hover>
         <v-card-media :src='me.src' :aspect-ratio="3.75"></v-card-media>
         <v-card-title primary-title class="headline"> About Me</v-card-title>
         <v-card-text>
