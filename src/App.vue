@@ -18,6 +18,7 @@
           <AboutMe></AboutMe>
           <Timeline id='timeline'></Timeline>
           <Projects></Projects>
+          <Contact></Contact>
         </v-layout>
       </v-content>
     </v-container>
@@ -28,11 +29,13 @@
 import Timeline from './components/timeline'
 import AboutMe from './components/aboutme'
 import Projects from './components/projects'
+import Contact from './components/contact'
 export default {
   components:{
     Timeline,
     AboutMe,
-    Projects
+    Projects,
+    Contact
   }
 }
 </script>
