@@ -6,10 +6,15 @@
         <span class="font-weight-light">Software Developer</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+        <v-btn color="indigo">About Me</v-btn>
+        <v-btn color="indigo">Projects</v-btn>
+        <v-btn color="indigo">Timeline</v-btn>
     </v-toolbar>
     <v-content>
-      <AboutMe></AboutMe>
-      <Timeline id='timeline'></Timeline>
+      <v-layout column>
+        <AboutMe></AboutMe>
+        <Timeline id='timeline'></Timeline>
+      </v-layout>
     </v-content>
   </v-app>
 </template>
