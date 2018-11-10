@@ -8,17 +8,17 @@
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items>
+          <v-btn href="#contact" flat>Contact Me</v-btn>
+          <v-btn href="#projects" flat>Projects</v-btn>
             <v-btn href="#timeline" flat>Timeline</v-btn>
-            <v-btn href="#projects" flat>Projects</v-btn>
-            <v-btn href="#contact" flat>Contact Me</v-btn>
         </v-toolbar-items>
       </v-toolbar>
       <v-content>
         <v-layout column>
           <AboutMe></AboutMe>
-          <Timeline id='timeline'></Timeline>
-          <Projects id='projects'></Projects>
           <Contact id='contact'></Contact>
+          <Projects id='projects'></Projects>
+          <Timeline id='timeline'></Timeline>
         </v-layout>
       </v-content>
     </v-container>
