@@ -50,6 +50,10 @@
         {
           icon:'fa-instagram',
           url:'https://www.instagram.com/lays_into_3dprinting'
+        },
+        {
+          icon:'fa-wordpress',
+          url: 'http://laysrodriguesdev.wordpress.com/'
         }
       ]
     })
