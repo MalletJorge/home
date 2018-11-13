@@ -9,14 +9,18 @@
         <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn href="#contact" flat>Contact Me</v-btn>
+          <v-btn href="#slides" flat>Slides</v-btn>
           <v-btn href="#projects" flat>Projects</v-btn>
-            <v-btn href="#timeline" flat>Timeline</v-btn>
+          <v-btn href="#timeline" flat>Timeline</v-btn>
         </v-toolbar-items>
       </v-toolbar>
       <v-content>
         <v-layout column>
           <AboutMe></AboutMe>
-          <Contact id='contact'></Contact>
+          <v-layout row>
+            <Presentations id='slides'></Presentations>
+            <Contact id='contact'></Contact>
+          </v-layout>
           <Projects id='projects'></Projects>
           <Timeline id='timeline'></Timeline>
         </v-layout>
@@ -35,12 +39,14 @@ import Timeline from './components/timeline'
 import AboutMe from './components/aboutme'
 import Projects from './components/projects'
 import Contact from './components/contact'
+import Presentations from './components/presentations'
 export default {
   components:{
     Timeline,
     AboutMe,
     Projects,
-    Contact
+    Contact,
+    Presentations
   }
 }
 </script>
