@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app :dark="isDark">
     <v-container>
       <v-toolbar app>
         <v-toolbar-title class="headline text-uppercase">
@@ -12,6 +12,9 @@
           <v-btn href="#slides" flat>Slides</v-btn>
           <v-btn href="#projects" flat>Projects</v-btn>
           <v-btn href="#timeline" flat>Timeline</v-btn>
+          <v-layout align-end fill-height>
+            <v-switch label="Dark Theme" flat v-model="isDark"></v-switch>
+          </v-layout>
         </v-toolbar-items>
       </v-toolbar>
       <v-content>
@@ -41,7 +44,10 @@ import Projects from './components/projects'
 import Contact from './components/contact'
 import Presentations from './components/presentations'
 export default {
-  components:{
+  data () {
+    return {isDark: true}
+  },
+  components: {
     Timeline,
     AboutMe,
     Projects,
