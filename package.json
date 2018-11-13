@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "push": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "push": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "test": "echo I dont know how to test vue =/"
   },
   "dependencies": {
     "push-dir": "^0.4.1",
