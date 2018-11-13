@@ -12,7 +12,7 @@
           <v-btn href="#slides" flat>Slides</v-btn>
           <v-btn href="#projects" flat>Projects</v-btn>
           <v-btn href="#timeline" flat>Timeline</v-btn>
-          <v-layout align-end fill-height>
+          <v-layout align-end fill-height wrap>
             <v-switch label="Dark Theme" flat v-model="isDark"></v-switch>
           </v-layout>
         </v-toolbar-items>
@@ -20,7 +20,7 @@
       <v-content>
         <v-layout column>
           <AboutMe></AboutMe>
-          <v-layout row>
+          <v-layout :column="$vuetify.breakpoint.xsOnly" :row="$vuetify.breakpoint.smAndUp">
             <Presentations id='slides'></Presentations>
             <Contact id='contact'></Contact>
           </v-layout>
