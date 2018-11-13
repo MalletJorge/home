@@ -3,11 +3,11 @@
     <v-container>
       <v-toolbar app>
         <v-toolbar-title class="headline text-uppercase">
-          <span>Lays Rodrigues - </span>
-          <span class="font-weight-light">Software Developer</span>
+          <span>Lays Rodrigues</span>
+          <span v-show="$vuetify.breakpoint.smAndUp" class="font-weight-light"> - Software Developer</span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-toolbar-items>
+        <v-toolbar-items v-show="$vuetify.breakpoint.smAndUp">
           <v-btn href="#contact" flat>Contact Me</v-btn>
           <v-btn href="#slides" flat>Slides</v-btn>
           <v-btn href="#projects" flat>Projects</v-btn>
