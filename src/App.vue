@@ -53,6 +53,11 @@ export default {
     Projects,
     Contact,
     Presentations
+  },
+  methods: {
+    track () {
+      this.$ga.page('/')
+    }
   }
 }
 </script>
